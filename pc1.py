@@ -40,7 +40,9 @@ source = body.get_attribute('innerHTML')
 #print( "source" + str(source))
 
 cabeceras = BeautifulSoup(source, 'html.parser').find_all('thead')
+paginacion = driver.find_element(By.ID, 'exploits-table_paginate')
 
+print( "tablapaginas" + str(paginacion))
 print("cabeceras" + str(cabeceras))
 
 
